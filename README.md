@@ -14,7 +14,7 @@ Requirements:
 
 
 How to (read to end, then start doing it):
-- download ReiNX-Custom-Splash-Converter-Release-0.1.zip from the RELEASE tab (not Source Code)
+- download the latest ReiNX-Splash-Converter.zip from the RELEASE tab (not Source Code)
 - unzip it with your favorite zip tool (7zip, winrar, you name it)
 - start the .exe you just unzipped
 - click "select image" and select the image you want as splash (dont believe the preview, its cropped af)
