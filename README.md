@@ -1,6 +1,8 @@
 # ReiNX-Custom-Splash-Converter
 Tool that converts images to a splash.bin
 
+Download here: https://github.com/xSillusx/ReiNX-Custom-Splash-Converter/releases
+
 Inspired by: https://github.com/TheExpertNoob/Custom-Splash-Script-for-ReiNX
 
 Requirements:
