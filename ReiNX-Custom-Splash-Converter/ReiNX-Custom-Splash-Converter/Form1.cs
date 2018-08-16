@@ -30,12 +30,18 @@ namespace ReiNX_Custom_Splash_Converter
                     textBox1.Text = dlg.FileName;
                 }
             }
+
+            LoadImage();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Bitmap im = new Bitmap(textBox1.Text);
-            Bitmap img = new Bitmap(im, 720, 1280);
+            Bitmap img = new Bitmap(im, 1280, 720);
+            img.RotateFlip(RotateFlipType.Rotate90FlipNone);
+            img.RotateFlip(RotateFlipType.RotateNoneFlipX);
+            img.RotateFlip(RotateFlipType.RotateNoneFlipY);
+
             List<byte> pixs = new List<byte>();
 
             for (int y = 0; y < img.Height; y++)
@@ -59,12 +65,34 @@ namespace ReiNX_Custom_Splash_Converter
 
 
             byte[] data = Encoding.UTF8.GetBytes("00921600");
-
-            using (FileStream fs = File.Create("splash.bin"))
+            try
             {
-                fs.Write(data, 0, data.Length);
-                fs.Write(pixels, 0, pixels.Length);
+                using (FileStream fs = File.Create("splash.bin"))
+                {
+                    fs.Write(data, 0, data.Length);
+                    fs.Write(pixels, 0, pixels.Length);
+                }
+
+                MessageBox.Show("Successfully created/wrote to splash.bin!");
+
+            }catch(Exception ex)
+            {
+                MessageBox.Show("Tell someone this: " + ex.Message);
             }
+            
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if(System.IO.File.Exists(textBox1.Text))
+            {
+                LoadImage();
+            }
+        }
+
+        private void LoadImage()
+        {
+            pictureBox1.Image = new Bitmap(textBox1.Text);
         }
     }
 }
