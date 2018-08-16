@@ -30,7 +30,6 @@ namespace ReiNX_Custom_Splash_Converter
                     textBox1.Text = dlg.FileName;
                 }
             }
-
             LoadImage();
         }
 
@@ -84,15 +83,15 @@ namespace ReiNX_Custom_Splash_Converter
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            if(System.IO.File.Exists(textBox1.Text))
-            {
                 LoadImage();
-            }
         }
 
         private void LoadImage()
         {
-            pictureBox1.Image = new Bitmap(textBox1.Text);
+            if (System.IO.File.Exists(textBox1.Text))
+            {
+                pictureBox1.Image = new Bitmap(textBox1.Text);
+            }
         }
     }
 }
