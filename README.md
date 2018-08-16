@@ -9,7 +9,7 @@ Requirements:
 - Image you want to have as splash
 
 
-How to:
+How to (read to end, then start doing it):
 - download ReiNX-Custom-Splash-Converter-Release-0.1.zip from the RELEASE tab (not Source Code)
 - unzip it with your favorite zip tool (7zip, winrar, you name it)
 - start the .exe you just unzipped
