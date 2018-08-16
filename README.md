@@ -16,18 +16,9 @@ How to:
 - click "select image" and select the image you want as splash
 - BUT CAUTION:
 the image you need to select needs to be in the proprtion of:
--------
-|      |
-|      |
-|      |
-|      |
---------
+VERTICAL
 AND NOT
--------------------
-|                  |
-|                  |
-|                  |
--------------------
+HORIZONTAL
 Rotate it with your favorite image software (paint, photoshop, gimp, you name it)
 - click "convert to splash.bin"
 - copy the splash.bin (which you can find in the same directory as the .exe you started!) to the /ReiNX/ folder
