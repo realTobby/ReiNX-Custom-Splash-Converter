@@ -8,7 +8,7 @@ Requirements:
 - Windows
 - Image you want to have as splash
 
-![Screenshot](https://github.com/xSillusx/ReiNX-Custom-Splash-Converter/blob/master/yes.PNG)
+![Screenshot](https://github.com/xSillusx/ReiNX-Custom-Splash-Converter/blob/master/segsegsegseg.PNG)
 
 
 How to (read to end, then start doing it):
